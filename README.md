@@ -2,28 +2,49 @@
 
 # ![image](https://user-images.githubusercontent.com/81099987/170871559-2748b2ed-6664-44d1-98fc-aa07fbdd043f.png)
 
-Product submission for the partial requirement of my dissertation.
-
-Tool written using Python and OpenCV.
-
-GUI designed with Qt Designer.
-
+This is my product submission for the partial requirement of my dissertation worth 30%.
 
 # Prerequisites and Installation
 
-Python 3
+Python 3, OpenCV, Cmake, Dlib, QT Designer
 
 # About HAAR Cascade
 The Haar-Cascade algorithm is a machine learning object detection algorithm, used to identify specific objects based upon the features that are found in an image or many images played together (i.e., video or live capture).
 
-Classifiers:
+> Classifiers:
 
-Frontal_Face: https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+> Frontal_Face: https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
-Eye: https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye.xml
+> Eye: https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye.xml
 
-# Execution
+ HAAR Execution
 > Enter Path Where File Exists.
 > 
-Run filename.py.
+> Run haar.py.
+
+
+# About Dlib 
+Dlib can detect the 68 facial landmarks including the jawline and eyebrows. It estimates the location of 68 coordinates (x, y) and plots the points on an image.
+
+> Dlib Execution
+> Enter Path Where File Exists.
+> 
+> Ensure .dat File Is In The Same Location As The .py File.
+> 
+> Run python landmark.py --shape-predictor shape_predictor_68_face_landmarks.dat --image evidence/Filter/IMG2.jpg
+
+# About RGB
+The colour of a single pixel is represented as 3 numbers between 0 and 255, corresponding to Red, Green, and Blue (RGB).
+
+> RGB Execution 
+> Print Coordinates From HAAR Eye Detection.
+> >
+> Enter Path Where File Exists.
+> >
+> Edit Code To Correlate With Eye Coordinates
+> 
+> Run rgb.py
+
+
+
 
