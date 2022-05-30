@@ -6,7 +6,7 @@ This is my product submission for the partial requirement of my dissertation wor
 
 # Prerequisites and Installation
 
-Python 3, OpenCV, Cmake, Dlib, QT Designer
+Python 3, OpenCV, Cmake, Dlib, imutils, numPy, QT Designer
 
 # About HAAR Cascade
 The Haar-Cascade algorithm is a machine learning object detection algorithm, used to identify specific objects based upon the features that are found in an image or many images played together (i.e., video or live capture).
@@ -19,6 +19,8 @@ The Haar-Cascade algorithm is a machine learning object detection algorithm, use
 
  HAAR Execution
 > Enter Path Where File Exists.
+>
+> Hard-code the image for detection
 > 
 > Run haar.py.
 
@@ -26,7 +28,12 @@ The Haar-Cascade algorithm is a machine learning object detection algorithm, use
 # About Dlib 
 Dlib can detect the 68 facial landmarks including the jawline and eyebrows. It estimates the location of 68 coordinates (x, y) and plots the points on an image.
 
-> Dlib Execution
+> Shape Predictor:
+
+> https://github.com/tzutalin/dlib-android/blob/master/data/shape_predictor_68_face_landmarks.dat
+
+ Dlib Execution
+
 > Enter Path Where File Exists.
 > 
 > Ensure .dat File Is In The Same Location As The .py File.
@@ -36,7 +43,7 @@ Dlib can detect the 68 facial landmarks including the jawline and eyebrows. It e
 # About RGB
 The colour of a single pixel is represented as 3 numbers between 0 and 255, corresponding to Red, Green, and Blue (RGB).
 
-> RGB Execution 
+ RGB Execution 
 > Print Coordinates From HAAR Eye Detection.
 > >
 > Enter Path Where File Exists.
@@ -44,6 +51,13 @@ The colour of a single pixel is represented as 3 numbers between 0 and 255, corr
 > Edit Code To Correlate With Eye Coordinates
 > 
 > Run rgb.py
+
+# GUI
+The GUI has been created using QT Designer, all features are implemented however the GUI is not functional.
+
+> To convert QT Designer file to .py run the following commmand:
+> 
+> pyuic5 -x tool.ui -o tool.py
 
 
 
